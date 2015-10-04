@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link href="./css/form_style.css" rel="stylesheet" type="text/css" />
+		<title>Connect Complaints</title>
+	</head>
+	<body bgcolor=#DDDDDD style="padding:2%;">
+		<div id="backIcon" style="float:left;">
+			<a href="index.html"><img src="./img/back.png" alt="Back" width=50px /></a>
+		</div>
+		<form action="" method="post" class="dark-matter">
+			<h1>Complaints 
+				<span>Please fill all the texts in the fields.</span>
+			</h1>
+			<label>
+				<span>Your Name* :</span>
+				<input id="name" type="text" name="name" placeholder="Your Full Name" required />
+			</label>
+			
+			<label>
+				<span>Your Adhaar Number* :</span>
+				<input id="adhaar" type="text" name="adhaar" placeholder="Your Adhaar Number" required />
+			</label>
+			
+			<label>
+				<span>Your Email* :</span>
+				<input id="email" type="email" name="email" placeholder="Valid Email Address" required />
+			</label>
+
+			<label>
+				<span>Name of the Civic/Government Organization Responsible * :</span>
+				<select id="org" name="org">
+					<option value="BDA">BDA</option>
+					<option value="BBMP">BBMP</option>
+					<option value="Others">Others</option>
+				</select>
+				<input id="orgOthers" name="orgOthers" type="text" placeholder="Others(Please specify)" required />
+			</label>
+
+			<label>
+				<span>Description of the problem* :</span>
+				<textarea id="desc" name="desc" placeholder="Description of the problem faced" required ></textarea>
+			</label> 
+
+			
+			<label>
+				<span>&nbsp;</span> 
+				<input type="button" class="button" value="Send" /> 
+			</label>    
+		</form>
+		<a href="#backIcon">Go to top</a>
+	</body>
+</html>
